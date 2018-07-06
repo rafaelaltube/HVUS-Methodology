@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style id="stndz-style">
+    </style>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Graphic example (v1.1.0) of the new HVUS work methodology created by Rafael Cueto">
+    <title>HVUS Methodology</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/cropper.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <!--[if lt IE 9]>
+    <div class="alert alert-warning alert-dismissible fade show m-0 rounded-0" role="alert">
+      You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <![endif]-->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-white rounded-0" style="background-color:#E85D26;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>HVUS Methodology <small class="h6">v1.1.0</small>
+            </h1>
+            <p class="lead">I don't know what HVUS means...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <!-- <h3>Demo:</h3> -->
+          <div class="img-container">
+            <img src="./images/picture.png" alt="Picture" class="cropper-hidden">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <!-- <h3>Preview:</h3> -->
+          <div class="docs-preview clearfix">
+            <div class="img-preview preview-lg" id="img-preview" style="width: 256px; height: 144px;">
+              <img src="./images/picture.png" style="display: block; width: 320px; height: 180px; min-width: 0px !important; min-height: 0px !important; max-width: none !important; max-height: none !important; transform: translateX(-39.3697px) translateY(-0.545455px);">
+            </div>
+          </div>
+
+          <div id="actions">
+            <div class="docs-data">
+              <div class="input-group input-group-sm">
+                <span class="input-group-prepend">
+                  <label class="input-group-text" for="dataPosition">Position</label>
+                </span>
+                <input type="text" class="form-control" id="dataPosition" placeholder="position">
+              </div>
+              <div class="input-group input-group-sm">
+                <span class="input-group-prepend">
+                  <label class="input-group-text" for="dataFunction">Function</label>
+                </span>
+                <input type="text" class="form-control" id="dataFunction" placeholder="function">
+              </div>
+            </div>
+            <div class="docs-toggles">
+              <!-- <h3>Toggles:</h3> -->
+              <div class="btn-group d-flex flex-nowrap" data-toggle="buttons">
+                <label class="btn btn-primary">
+                  <input type="radio" class="sr-only" id="aspectRatio1" name="aspectRatio" value="1.7777777777777777">
+                  <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="aspectRatio: 16 / 9">
+                    16:9
+                  </span>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" class="sr-only" id="aspectRatio2" name="aspectRatio" value="1.3333333333333333">
+                  <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="aspectRatio: 4 / 3">
+                    4:3
+                  </span>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" class="sr-only" id="aspectRatio3" name="aspectRatio" value="1">
+                  <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="aspectRatio: 1 / 1">
+                    1:1
+                  </span>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" class="sr-only" id="aspectRatio4" name="aspectRatio" value="0.6666666666666666">
+                  <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="aspectRatio: 2 / 3">
+                    2:3
+                  </span>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" class="sr-only" id="aspectRatio5" name="aspectRatio" value="NaN">
+                  <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="aspectRatio: NaN">
+                    Free
+                  </span>
+                </label>
+              </div>
+              <div class="btn-group d-flex flex-nowrap" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" class="sr-only" id="viewMode0" name="viewMode" value="0" checked="">
+                  <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="View Mode 0">
+                    VM0
+                  </span>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" class="sr-only" id="viewMode1" name="viewMode" value="1">
+                  <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="View Mode 1">
+                    VM1
+                  </span>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" class="sr-only" id="viewMode2" name="viewMode" value="2">
+                  <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="View Mode 2">
+                    VM2
+                  </span>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" class="sr-only" id="viewMode3" name="viewMode" value="3">
+                  <span class="docs-tooltip" data-toggle="tooltip" title="" data-original-title="View Mode 3">
+                    VM3
+                  </span>
+                </label>
+              </div>
+            </div> <!-- !.docs-toggles -->
+
+            <button class="btn btn-success btn-block" id="addSP" data-toggle="tooltip" href="#" title="" data-original-title="">Add SmartPoint</button>
+          </div> <!-- !#actions -->
+        </div> <!-- !.col-md-3 -->
+      </div> <!-- !.row -->
+
+      
+      <h3 class="smartspoints-title" style="margin:40px 0 20px 0;border-bottom: 1px solid #ddd;display:none;">SmartsPoints</h3>
+      <div id="smartspoints"></div>
+
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="heart">
+        </p>
+        <nav class="nav flex-wrap justify-content-center mb-3">
+          <a class="nav-link" href="https://github.com/rafaelaltube">With Love</a>
+        </nav>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/cropper.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script type="text/javascript">
+      
+      $(document).ready(function () {
+
+        $('#addSP').click(function(){
+          console.log('Adding SmartPoint...');
+
+          html = '<div class="smartpoint">'+
+          '<div class="row">'+
+            '<div class="col-md-3 photo">'+ $( ".docs-preview" ).html() +'</div>'+
+            '<div class="col-md-9 details">'+
+              '<p>Position: '+ $('#dataPosition').val() +'</p>'+
+              '<p>Function: '+ $('#dataFunction').val() +'</p>'+
+            '</div>'+
+          '</div>'+
+        '</div>';
+        console.log(html);
+
+          $('#smartspoints').prepend( html );
+
+          $('#smartspoints *').removeAttr('id');
+
+          $('.smartspoints-title').css('display','block')
+          // Reset form
+          $('#dataPosition').val('');
+          $('#dataFunction').val('');
+        });
+           
+      });
+      
+    </script>
+  </body>
+</html>
